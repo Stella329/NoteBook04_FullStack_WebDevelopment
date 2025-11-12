@@ -7,16 +7,17 @@
   <title>TinDog</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/solution.css">
+  <link rel="stylesheet" href="./css/style.css"> <!-- 用自己的css兜底 -->
 </head>
 
 <body>
 
 
   <!-- Title -->
-  <section id="title" class="gradient-background">
+  <section id="title" class="gradient-background"> 
+  <!-- 放置动态背景：不能放在container中，因为要全局平铺 -->
 
-    <div class="container col-xxl-8 px-4 pt-5">
+    <div class="container col-xxl-8 px-4 pt-5"> <!-- pt: padding top only; --判定padding（而不是margin）：padding == extended background; margin will be white -->
       <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" height="200"
@@ -43,6 +44,7 @@
       </div>
     </div>
   </section>
+
   <!-- Features -->
   <section id="features">
     <div class="container mt-5">
@@ -99,6 +101,7 @@
       </div>
     </div>
   </section>
+
   <!-- Testimonial -->
   <section id="testimonial">
     <div class="my-5">
@@ -106,16 +109,20 @@
         <div class="container py-5">
           <h2 class="text-body-emphasis">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on
             TinDog. Woof."</h2>
-          <img class="profile-img mt-5" src="./images/dog-img.jpg" alt="dog image">
+          <!-- for HTML, 只能有一个H1： per website -->
+
+          <img class="profile-img mt-5" src="./images/dog-img.jpg" alt="dog image"> <!-- customized styling in CSS for .profile-img: 圆角border-radius 50%，margin等-->
+
           <p class="col-lg-8 mx-auto lead mt-2">
             Pebbles, New York
           </p>
         </div>
 
-        <div class="container">
+        <div class="container">  <!-- 12 columns system-->
           <div class="row">
             <div class="col-lg-3 col-sm-12">
-              <img src="./images/techcrunch.png" alt="techcrunch" height="30">
+              <img src="./images/techcrunch.png" alt="techcrunch" height="30">  
+              <!-- all imgs 分别设置：height=30，使每张图片同样大小 -->
             </div>
             <div class="col-lg-3 col-sm-12">
               <img src="./images/mashable.png" alt="mashable" height="30">
@@ -135,7 +142,7 @@
   <section id="pricing">
     <div class="container">
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h2 class="display-4 fw-normal">A Plan for Every Dog's Needs</h2>
+        <h2 class="display-4 fw-normal">A Plan for Every Dog's Needs</h2> <!-- display-4:不依赖于html h2格式，为bs格式，因此更改为h2字号不会变 -->
         <p class="fs-5 text-body-secondary">Simple and affordable price plans for you and your dog.
       </div>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -152,6 +159,7 @@
                 <li>Unlimited App Usage</li>
               </ul>
               <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up for free</button>
+              <!-- 原始bs默认颜色为primary: i.e. btn-outline-primary,为蓝色 -->
             </div>
           </div>
         </div>
@@ -190,6 +198,7 @@
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <section id="contact" class="gradient-background">
     <div class="container ">
