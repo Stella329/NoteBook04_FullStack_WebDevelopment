@@ -20,13 +20,16 @@
 
       <div class="dice">
         <p>Player 2</p>
-        <img class="img2" src="images/dice6.png" />
+        <img class="img2" id="refresh" src="images/dice6.png" />
       </div>
     </div>
 
     <footer> welcome to 🎲 stella's 🎲 game </footer>
 
-    <script src="index.js" async charset="utf-8"></script>
+    <script src="index.js" defer charset="utf-8"></script>
+    <!-- defer 会保证脚本在 DOM 解析完成后执行（因此绑定会成功），且不会阻塞渲染。 -->
+
+
 
   </body>
 </html>
