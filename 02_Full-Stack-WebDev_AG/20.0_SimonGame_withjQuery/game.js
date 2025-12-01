@@ -49,6 +49,9 @@ function gameOver() {
         $('body').removeClass('game-over');
     }, 200);
 
+    var audio = new Audio('./sounds/wrong.mp3')
+    audio.play()
+    
     $('h1').text('Game Over, Press Any Key to Restart')
 }
 
