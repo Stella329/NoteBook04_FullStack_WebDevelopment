@@ -1,4 +1,8 @@
 /* 
+inquirer: https://www.npmjs.com/package/qr-image
+qr-img: https://www.npmjs.com/package/qr-image
+fs: https://nodejs.org/docs/latest-v18.x/api/fs.html#fswritefilefile-data-options-callback
+
 1. Use the inquirer npm package to get user input.
     - inquirer pakcage 初学解释：https://www.educative.io/answers/how-to-use-the-inquirer-node-package
 */
